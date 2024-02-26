@@ -1,6 +1,6 @@
 import numpy as np
 import tensorflow as tf
-import tensorflow.keras.backend as K
+import keras.backend as K
 from sklearn.model_selection import train_test_split
 
 def reweight(events,model,batch_size=10000):
@@ -112,3 +112,5 @@ def omnifold(theta0,theta_unknown_S,iterations,model,verbose=0):
         pass
 
     return weights
+
+
